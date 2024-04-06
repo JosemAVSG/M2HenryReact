@@ -2,12 +2,18 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 interface Data {
-  title: string; 
+  title: string;
+  year: number;
+  director: string;
+  duration: string;
+  genre: string[];
+  rate: number;
+  poster: string;
 }
 
 
 function App() {
-  const [data, setData] = useState<Data[]>([ {title:''}]);
+  const [data, setData] = useState<Data[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
