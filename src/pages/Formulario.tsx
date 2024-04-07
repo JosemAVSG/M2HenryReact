@@ -72,7 +72,6 @@ const Formulario = () => {
           type="text"
           id="director"
           {...register("director", { required: true })}
-          value={}
         />
         <br />
         {errors.director && <span>Director is required</span>}
